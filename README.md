@@ -1,2 +1,3 @@
-# mayer-archive-api
-Back end for The Mayer Archive
+# Strapi application
+
+A quick description of your strapi application
