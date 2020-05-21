@@ -6,7 +6,7 @@
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
-    "plugin": "cd plugins/content-export-import && yarn && yarn build",
+    "plugin": "cd plugins/content-export-import && yarn install",
     "build": "yarn plugin && cd ../../ && strapi build",
     "strapi": "strapi"
   },
