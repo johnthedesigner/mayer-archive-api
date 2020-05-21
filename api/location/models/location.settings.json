@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "locations",
+  "info": {
+    "name": "location"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "City": {
+      "type": "string"
+    },
+    "state_region": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "continent": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "images": {
+      "via": "location",
+      "collection": "image"
+    }
+  }
+}

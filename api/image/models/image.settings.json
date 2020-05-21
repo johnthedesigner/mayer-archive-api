@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "Images",
+  "info": {
+    "name": "image"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "image_id": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "caption_on_envelope": {
+      "type": "text"
+    },
+    "recorded": {
+      "type": "boolean"
+    },
+    "confirmed_missing": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "envelope_id": {
+      "via": "images",
+      "model": "envelope"
+    },
+    "location": {
+      "model": "location",
+      "via": "images"
+    },
+    "landmark": {
+      "model": "landmark",
+      "via": "images"
+    },
+    "display_title": {
+      "type": "text"
+    },
+    "display_caption": {
+      "type": "richtext"
+    },
+    "research_notes": {
+      "type": "richtext"
+    }
+  }
+}

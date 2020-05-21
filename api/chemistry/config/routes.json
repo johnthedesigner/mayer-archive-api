@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/chemistries",
+      "handler": "chemistry.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/chemistries/count",
+      "handler": "chemistry.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/chemistries/:id",
+      "handler": "chemistry.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/chemistries",
+      "handler": "chemistry.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/chemistries/:id",
+      "handler": "chemistry.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/chemistries/:id",
+      "handler": "chemistry.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

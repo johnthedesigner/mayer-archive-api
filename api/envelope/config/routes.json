@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/envelopes",
+      "handler": "envelope.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/envelopes/count",
+      "handler": "envelope.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/envelopes/:id",
+      "handler": "envelope.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/envelopes",
+      "handler": "envelope.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/envelopes/:id",
+      "handler": "envelope.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/envelopes/:id",
+      "handler": "envelope.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

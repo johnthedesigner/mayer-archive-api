@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "landmarks",
+  "info": {
+    "name": "landmark"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "images": {
+      "via": "landmark",
+      "collection": "image"
+    }
+  }
+}
