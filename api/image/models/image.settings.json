@@ -25,9 +25,9 @@
       "default": false,
       "required": true
     },
-    "envelope_id": {
-      "via": "images",
-      "model": "envelope"
+    "envelope": {
+      "model": "envelope",
+      "via": "images"
     },
     "location": {
       "model": "location",

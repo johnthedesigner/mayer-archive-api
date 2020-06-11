@@ -37,10 +37,6 @@
       "model": "chemistry",
       "via": "envelopes"
     },
-    "images": {
-      "collection": "image",
-      "via": "envelope_id"
-    },
     "envelope_notes": {
       "type": "text"
     },
@@ -52,6 +48,10 @@
     },
     "research_notes": {
       "type": "richtext"
+    },
+    "images": {
+      "via": "envelope",
+      "collection": "image"
     }
   }
 }
