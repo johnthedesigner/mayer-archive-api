@@ -45,6 +45,11 @@
     },
     "research_notes": {
       "type": "richtext"
+    },
+    "collections": {
+      "via": "images",
+      "collection": "collection",
+      "dominant": true
     }
   }
 }
